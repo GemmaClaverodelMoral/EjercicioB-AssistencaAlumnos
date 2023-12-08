@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASISTENCIA A CLASE</title>
+    <script defer src="problemaB.js"></script>
+</head>
+    <h1>MARCAR ASISTENCIAS</h1>  
+    <img ID="imagen" src="problemaB.png"></img>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener la referencia a la imagen por su identificador
+            var imagen = document.getElementById("imagen");
+            // Agregar un evento de carga a la imagen
+            imagen.addEventListener("load", function() {
+                setTimeout(function() { //para que cargue la imagen antes que los prompts
+                   
+                    resolverProblemaB()
+                    
+                },100);
+            });
+        });
+    </script>
+</body>
+</html>
